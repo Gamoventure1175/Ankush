@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
-    "start": "cd frontend && npm install && npm run build && cd ../backend && npm install && node index.js ", 
+    "start": "cd backend && node index.js",
     "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
   },
   "dependencies": {},
