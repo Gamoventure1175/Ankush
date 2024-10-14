@@ -1,0 +1,13 @@
+{
+  "name": "Spagpay",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "start": "cd backend && node index.js",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
