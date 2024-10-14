@@ -13,14 +13,14 @@ app.use(cors());
 app.use(express.json());
 
 // Serve Vite frontend files
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+app.use(express.static(path.join(__dirname, '../Frontend/dist')));
 
 // API routes
 app.use('/api/v1', rootRouter);
 
 // Catch-all to serve the index.html file for any other route that doesn't match an API route
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '../Frontend/dist', 'index.html'));
 });
 
 // Catch 404 and forward to error handler
